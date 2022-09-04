@@ -34,7 +34,7 @@
 		doc = check_document(doc);
 
 		const wrapper = doc.createElement("div");
-		wrapper.classList.add("blueshell", "terminal");
+		wrapper.classList.add("jsterminal", "terminal");
 
 		const input = doc.createElement("textarea");
 		
@@ -145,7 +145,7 @@
 		}
 	}
 
-	function js_terminal(selector, doc=document, options={
+	function quick (selector, doc=document, options={
 		output_prefix: null,
 		input_prefix: null,
 		prefix: "> ",
@@ -159,9 +159,9 @@
 	}
 
 	exports.check_document = check_document;
-	exports["default"] = js_terminal;
 	exports.get_container = get_container;
 	exports.make_terminal = make_terminal;
+	exports.quick = quick;
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 

@@ -30,7 +30,7 @@ export function make_terminal (doc=document, options={}) {
 	doc = check_document(doc)
 
 	const wrapper = doc.createElement("div")
-	wrapper.classList.add("blueshell", "terminal")
+	wrapper.classList.add("jsterminal", "terminal")
 
 	const input = doc.createElement("textarea")
 	
@@ -141,7 +141,7 @@ export function make_terminal (doc=document, options={}) {
 	}
 }
 
-export default function js_terminal(selector, doc=document, options={
+export function quick (selector, doc=document, options={
 	output_prefix: null,
 	input_prefix: null,
 	prefix: "> ",
