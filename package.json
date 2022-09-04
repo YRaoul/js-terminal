@@ -1,0 +1,16 @@
+{
+  "name": "jsterminal",
+  "description": "creates a javascript terminal you can link to the Read-Eval-Print-Loop of your choice",
+  "main": "jsterminal.bundle.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "bundle": "rollup ./jsterminal.mjs --file ./jsterminal.bundle.js --format umd --name jsterminal"
+  },
+  "author": "gui3",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.79.0"
+  }
+}
